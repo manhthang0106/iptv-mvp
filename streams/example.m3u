@@ -1,0 +1,11 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="BBCNews.uk" tvg-name="BBC News" tvg-logo="https://example.com/bbc-logo.png" group-title="News",BBC News
+http://example.com/bbc-news.m3u8
+#EXTINF:-1 tvg-id="CNNIntl.us" tvg-name="CNN International" tvg-logo="https://example.com/cnn-logo.png" group-title="News",CNN International
+http://example.com/cnn-intl.m3u8
+#EXTINF:-1 tvg-id="ESPN.us" tvg-name="ESPN" tvg-logo="https://example.com/espn-logo.png" group-title="Sports",ESPN
+http://example.com/espn.m3u8
+#EXTINF:-1 tvg-id="Discovery.us" tvg-name="Discovery Channel" tvg-logo="https://example.com/discovery-logo.png" group-title="Documentary",Discovery Channel
+http://example.com/discovery.m3u8
+#EXTINF:-1 tvg-id="NatGeo.us" tvg-name="National Geographic" tvg-logo="https://example.com/natgeo-logo.png" group-title="Documentary",National Geographic
+http://example.com/natgeo.m3u8
