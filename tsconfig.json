@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "target": "es2022",
+    "module": "nodeNext",
+    "moduleResolution": "nodeNext",
+    "typeRoots": [
+      "./scripts/types",
+      "./node_modules/@types"
+    ],
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true
+  },
+  "ts-node": {
+    "esm": true,
+    "transpileOnly": true
+  },
+  "include": ["scripts/**/*"],
+  "exclude": ["node_modules"]
+}
