@@ -1,0 +1,42 @@
+{
+  "name": "iptv-mvp",
+  "version": "1.0.0",
+  "description": "MVP version of IPTV playlist management tool",
+  "type": "module",
+  "scripts": {
+    "playlist:generate": "tsx scripts/commands/playlist/generate.ts",
+    "playlist:validate": "tsx scripts/commands/playlist/validate.ts",
+    "playlist:format": "tsx scripts/commands/playlist/format.ts",
+    "playlist:test": "tsx scripts/commands/playlist/test.ts",
+    "playlist:lint": "m3u-linter -c m3u-linter.json",
+    "api:generate": "tsx scripts/commands/api/generate.ts",
+    "readme:update": "tsx scripts/commands/readme/update.ts",
+    "check": "npm run playlist:lint && npm run playlist:validate",
+    "format": "npm run playlist:format",
+    "update": "npm run playlist:generate && npm run api:generate && npm run readme:update",
+    "lint": "eslint \"scripts/**/*.{ts,js}\"",
+    "test": "jest --runInBand"
+  },
+  "keywords": ["iptv", "m3u", "playlist", "streaming"],
+  "author": "MVP Creator",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.11.0",
+    "chalk": "^5.4.1",
+    "cli-progress": "^3.12.0",
+    "commander": "^14.0.0",
+    "glob": "^11.0.3",
+    "iptv-playlist-parser": "^0.15.1",
+    "m3u-linter": "^0.4.2",
+    "normalize-url": "^8.1.0",
+    "tsx": "^4.20.3"
+  },
+  "devDependencies": {
+    "@swc/jest": "^0.2.39",
+    "@typescript-eslint/eslint-plugin": "^8.38.0",
+    "@typescript-eslint/parser": "^8.38.0",
+    "eslint": "^9.32.0",
+    "jest": "^30.0.5",
+    "typescript": "^5.7.3"
+  }
+}
